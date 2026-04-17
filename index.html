@@ -5,81 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>My Profile Card</title>
 </head>
 
 <body>
-    <article data-testid="profile-card" class="profile-card">
+    <article data-testid="test-profile-card" class="profile-card">
 
-        <!-- Banner -->
-        <header data-testid="profile-header" class="banner">
-            <span data-testid="profile-availability" class="badge">
-                Available for hire
-            </span>
-        </header>
+        <!-- LEFT SIDE -->
+        <figure>
+            <img src="profile.jpeg" alt="Portrait of Abdulkareem Rukayat"
+                data-testid="test-user-avatar" />
 
-        <!-- Profile Image -->
-        <figure data-testid="profile-avatar-wrapper" class="avatar-wrapper">
-            <img src="profile.jpeg" alt="Profile picture of Abdulkareem Rukayat" data-testid="profile-avatar"
-                class="avatar" />
+            <figcaption>Frontend Developer</figcaption>
+
+            <h2 data-testid="test-user-name">Abdulkareem Rukayat</h2>
+
+            <p data-testid="test-user-bio">
+                I am a passionate frontend developer learning React, building projects, and sharing my journey.
+            </p>
         </figure>
 
-        <!-- Name + Role -->
-        <section data-testid="profile-info">
-            <h1 data-testid="profile-name">Abdulkareem Rukayat</h1>
-            <p data-testid="profile-role" class="role">
-                Frontend Developer
-            </p>
-        </section>
+        <!-- RIGHT SIDE -->
+        <div class="profile-content">
 
-        <!-- Bio -->
-        <section data-testid="profile-bio-section">
-            <p data-testid="profile-bio" class="bio">
-                I am learning how to build clean, responsive web apps and document my journey on TikTok.
-            </p>
-        </section>
+            <p data-testid="test-user-time" id="time" aria-live="polite"></p>
 
-        <!-- Contact -->
-        <address data-testid="profile-contact" class="contact">
-            <p data-testid="profile-email">abdulkareemrukayat18@email.com</p>
-            <p data-testid="profile-location">Ibadan, Nigeria</p>
-            <p data-testid="profile-time" id="profile-time">
-                Loading time...
-            </p>
-        </address>
+            <nav>
+                <ul data-testid="test-user-social-links">
+                    <li>
+                        <a href="https://twitter.com/abdulkareemru19" target="_blank" rel="noopener noreferrer"
+                            class="Twitter" data-testid="test-user-social-twitter">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/adebimpe01" target="_blank" rel="noopener noreferrer"
+                           class="Github" data-testid="test-user-social-github">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/abdulkareem-rukayat-b743a6247/" target="_blank"
+                            rel="noopener noreferrer" class="linkedIn"
+                            data-testid="test-user-social-linkedin">LinkedIn</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <!-- Social Media -->
-        <nav data-testid="profile-socials" class="socials" aria-label="Social media links">
-            <a href="https://twitter.com/@abdulkareemru19" target="_blank" data-testid="social-twitter">Twitter</a>
-            <a href="https://www.linkedin.com/in/abdulkareem-rukayat-b743a6247/" target="_blank"
-                data-testid="social-linkedin">LinkedIn</a>
-            <a href="https://github.com/adebimpe01" target="_blank" data-testid="social-github">GitHub</a>
-            <a href="https://tiktok.com/@abdulkareemrukayat18" target="_blank" data-testid="social-tiktok">TikTok</a>
-        </nav>
+            <section>
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Coding</li>
+                    <li>Watching Tech Videos</li>
+                    <li>Content Creation</li>
+                </ul>
+            </section>
 
-        <!-- Hobbies -->
-        <section data-testid="profile-hobbies" class="hobbies">
-            <span data-testid="hobby-1">Music</span>
-            <span data-testid="hobby-2">Coding</span>
-            <span data-testid="hobby-3">Content Creation</span>
-            <span data-testid="hobby-4">Learning</span>
-        </section>
+            <section>
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes">
+                    <li>Procrastination</li>
+                    <li>Slow Internet</li>
+                </ul>
+            </section>
 
-        <!-- Skills -->
-        <section data-testid="profile-skills" class="skills">
-            <span data-testid="skill-1">HTML</span>
-            <span data-testid="skill-2">CSS</span>
-            <span data-testid="skill-3">JavaScript</span>
-            <span data-testid="skill-4">React</span>
-        </section>
-
-        <!-- Actions -->
-        <section data-testid="profile-actions" class="buttons">
-            <button data-testid="follow-button" class="follow">Follow</button>
-            <button data-testid="message-button" class="message">Message</button>
-        </section>
+        </div>
 
     </article>
+
     <script src="script.js"></script>
 </body>
 

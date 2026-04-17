@@ -1,14 +1,11 @@
-const timeEl = document.querySelector("[data-testid='profile-time']");
-
 function updateTime() {
+    const timeElement = document.getElementById("time");
+
     const now = new Date();
 
-    const formatted = now.toLocaleString("en-NG", {
-        dateStyle: "medium",
-        timeStyle: "short"
-    });
+    const utcTime = now.toISOString().split(".")[0] + "Z";
 
-    timeEl.textContent = ` ${formatted}`;
+    timeElement.textContent = `Current UTC Time: ${utcTime}`;
 }
 
 updateTime();
