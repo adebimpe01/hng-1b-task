@@ -1,11 +1,12 @@
-function updateTime() {
-    const timeElement = document.getElementById("time");
+const timeEl = document.getElementById("time");
 
+function updateTime() {
     const now = new Date();
 
-    const utcTime = now.toISOString().split(".")[0] + "Z";
+    const epoch = Date.now(); 
+    const localTime = now.toLocaleTimeString();
 
-    timeElement.textContent = `Current UTC Time: ${utcTime}`;
+    timeEl.textContent = `Current epoch time: ${epoch} | ${localTime}`;
 }
 
 updateTime();

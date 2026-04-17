@@ -70,8 +70,18 @@ body {
 
 #time {
     font-size: 13px;
-    color: #2563eb;
-    font-weight: 500;
+    color: #475569;
+    background: #f1f5f9;
+    padding: 10px 12px;
+    border-radius: 10px;
+    display: inline-block;
+    font-family:  monospace;
+    transition: all 0.2s ease;
+}
+
+#time:hover {
+    background: #e2e8f0;
+    transform: translateY(-2px);
 }
 
 .profile-content section,
